@@ -41,12 +41,7 @@ pip install -r requirements.txt
 jupyter nbconvert --to script glaucoma-classification.ipynb
 ```
 
-```
-mv .env_demo .env
-lightning run app nb_app.py --cloud --open-ui False --name ons
-```
-
-Please execute the appications below serially as the complexity level varies. The final app `demo` shows how applications can organised in a sequence and executed serially. We also see lighthing play well with 3rd party components like `W&B`, `Grado` etc.
+Edit `.env` file and replace it with `AWS` and `W&B` credentials. Please execute the appications below serially as the complexity level varies.
 
 ```
 # Research PDF
@@ -70,3 +65,5 @@ python -m lightning run app 4_demo_app.py --env WANDB_API_KEY=$WANDB_API_KEY \
 --env DEMO_AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID --env DEMO_AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
 --cloud --open-ui false --name demo
 ```
+
+The final app `demo` shows how applications can organised in a sequence and executed serially. We also see an example of lighthing with 3rd party components like `W&B`, `Grado` etc.
