@@ -11,7 +11,6 @@ class RootFlow(L.LightningFlow):
 
     def run(self):
         self.train_work.run()
-        print("##########################")
-        print(self.comp.last_args())
+        self._exit("Application End!")
 
 app = L.LightningApp(RootFlow())

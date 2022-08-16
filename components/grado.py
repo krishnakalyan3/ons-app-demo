@@ -41,8 +41,8 @@ class ImageServeGradio(ServeGradio):
     inputs = gr.inputs.Image(type="pil", shape=(224, 224))
     outputs = gr.outputs.Label(num_top_classes=10)
 
-    def __init__(self, cloud_compute, *args, **kwargs):
-        super().__init__(*args, cloud_compute=cloud_compute, parallel=True, **kwargs)
+    def __init__(self, cloud_compute, parallel=True, *args, **kwargs):
+        super().__init__(*args, cloud_compute=cloud_compute, parallel=parallel, **kwargs)
         self.examples = None
         self.best_model_path = None
         self._transform = T.Compose([T.Resize((224, 224)), T.ToTensor(), T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
