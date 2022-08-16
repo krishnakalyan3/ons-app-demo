@@ -8,7 +8,7 @@ graph BT;
     T(Application <br><br>Lighting Work)      -- state <br>changes --> LF
     I(Research <br><br>Lightning Work) -- state <br>changes --> LF
     D(Inference <br><br>Lightning Work)      -- state <br>changes --> LF
-    U(Train <br><br>Lightning Work)        -- state <br>changes --> LF  
+    U(Training Script <br><br>Lightning Work)        -- state <br>changes --> LF  
     LF -- run --> T
     LF -- run --> I
     LF -- run --> D 
