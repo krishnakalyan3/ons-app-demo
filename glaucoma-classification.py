@@ -165,7 +165,7 @@ class ImageClassifier(pl.LightningModule):
         return loss
 
     def configure_optimizers(self):
-        return torch.optim.Adam(self.parameters(), lr=0.03)
+        return torch.optim.Adam(self.parameters(), lr=0.003)
 
 
 # In[10]:
