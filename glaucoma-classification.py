@@ -165,7 +165,7 @@ class ImageClassifier(pl.LightningModule):
         return loss
 
     def configure_optimizers(self):
-        return torch.optim.Adam(self.parameters(), lr=0.001)
+        return torch.optim.Adam(self.parameters(), lr=0.03)
 
 
 # In[10]:
@@ -173,7 +173,7 @@ class ImageClassifier(pl.LightningModule):
 
 checkpoint_callback = ModelCheckpoint(monitor="val_accuracy", mode="max")
 
-trainer = pl.Trainer(max_epochs=15, 
+trainer = pl.Trainer(max_epochs=7, 
                      accelerator='gpu',
                      devices=1, 
                      precision=16,
