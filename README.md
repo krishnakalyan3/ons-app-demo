@@ -5,19 +5,19 @@ Lightning App is composed of Lightning Work and Lightning Flow. Start by wrappin
 graph BT;
   subgraph Local VM
     LF((App <br><br>Lightning <br>Flow))
-    T(Train <br><br>Lighting Work)      -- state <br>changes --> LF
-    I(Inference <br><br>Lightning Work) -- state <br>changes --> LF
-    D(Diag <br><br>Lightning Work)      -- state <br>changes --> LF
-    U(UI <br><br>Lightning FLow)        -- state <br>changes --> LF  
+    T(Application <br><br>Lighting Work)      -- state <br>changes --> LF
+    I(Research <br><br>Lightning Work) -- state <br>changes --> LF
+    D(Inference <br><br>Lightning Work)      -- state <br>changes --> LF
+    U(Train <br><br>Lightning Work)        -- state <br>changes --> LF  
     LF -- run --> T
     LF -- run --> I
     LF -- run --> D 
     LF -- run --> U 
     subgraph existing scripts
-      TS[train_script.py]
-      IS[gradio_script.py]
-      DS[tensorboard]
-      US[ui_script.py]
+      TS[0_paper_app.py]
+      IS[1_jupyter_app.py]
+      DS[2_grado_app.py]
+      US[3_trainer_app.py]
     end
     subgraph wrapper code
       T ---> TS
