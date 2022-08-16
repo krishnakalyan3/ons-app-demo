@@ -1,0 +1,13 @@
+torch
+pytorch-lightning
+torchmetrics
+torchvision
+timm
+wandb
+matplotlib
+s3fs
+numpy
+pandas
+gradio
+Pillow
+git+https://github.com/Lightning-AI/LAI-Jupyter-Component
