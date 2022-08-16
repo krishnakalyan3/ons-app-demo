@@ -32,7 +32,7 @@ python -m lightning run app 3_trainer_app.py --env WANDB_API_KEY=$WANDB_API_KEY 
 --env DEMO_AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID --env DEMO_AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
 --cloud --open-ui false --name trainer
 
-# Demo
+# Demo (Training and Inference)
 python -m lightning run app 4_demo_app.py --env WANDB_API_KEY=$WANDB_API_KEY \
 --env DEMO_AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID --env DEMO_AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
 --cloud --open-ui false --name demo
