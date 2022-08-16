@@ -28,6 +28,8 @@ graph BT;
   end
 ```
 
+### Install Lightning
+
 This is a demo lightning app that gradually shows us how to build applications step by step. Make sure that you execute the commands below. 
 
 ```
@@ -43,6 +45,7 @@ jupyter nbconvert --to script glaucoma-classification.ipynb
 
 Edit `.env` file and replace it with `AWS` and `W&B` credentials. Please execute the appications below serially as the complexity level varies.
 
+### Execution on Cloud
 ```
 # Research PDF
 python -m lightning run app 0_paper_app.py --cloud --open-ui False --name paper
