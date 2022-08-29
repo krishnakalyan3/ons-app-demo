@@ -70,3 +70,7 @@ python -m lightning run app 4_demo_app.py --env WANDB_API_KEY=$WANDB_API_KEY \
 ```
 
 The final app `demo` shows how applications can organised in a sequence and executed serially. We also see an example of lighthing with 3rd party components like `W&B`, `Gradio` etc.
+
+## TODO
+- [ ] Update NB and fix code
+- [ ] Prepare dataset actions
