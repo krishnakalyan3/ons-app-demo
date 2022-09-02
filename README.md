@@ -74,3 +74,4 @@ The final app `demo` shows how applications can organised in a sequence and exec
 ## TODO
 - [ ] Update NB and fix code
 - [ ] Prepare dataset actions
+- [ ] Use W&B correctly
